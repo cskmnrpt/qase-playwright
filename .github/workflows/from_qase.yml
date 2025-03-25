@@ -30,9 +30,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: cskmnrpt/qase-link-run@v2
-        env:
-          QASE_TESTOPS_API_TOKEN: ${{ env.QASE_TESTOPS_API_TOKEN }}
+      - name: Link GitHub Action with Qase.
+        uses: cskmnrpt/qase-link-run@v2
 
       - name: Checkout repository
         uses: actions/checkout@v3
